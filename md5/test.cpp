@@ -16,7 +16,7 @@ int main()
     uint8_t md5_data[MD5_DIGEST_LENGTH] = { 0 };
 
     do {
-        fd = open("./test.bin", O_RDONLY);
+        fd = open("../test.bin", O_RDONLY);
         if (fd == -1) {
             TEST_LOG("open fail, errno: %d, %s", errno, strerror(errno));
             break;
